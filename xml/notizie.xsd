@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.aynwed.com"
+	xmlns="http://www.aynwed.com"
+	elementFormDefault="qualified">
+
+<xs:element name="notizie">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="notizia" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="data" type="xs:date" />
+                        <xs:element name="titolo" type="xs:string" />
+                        <xs:element name="categoria">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Sconto" />
+                                    <xs:enumeration value="Evento" />
+                                    <xs:enumeration value="Notizia" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="descrizione" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

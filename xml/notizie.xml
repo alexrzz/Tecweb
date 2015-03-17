@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="notizie.xsl"?>
+<notizie xmlns="http://www.aynwed.com" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="http://www.aynwed.com notizie.xsd">
+	<notizia>
+		<data>2014-05-11</data>
+		<titolo>Sconto 20% sulle riparazioni</titolo>
+		<categoria>Sconto</categoria>
+		<descrizione>
+			Vi offriamo un eccezionale sconto del 20% sulle riparazioni di qualsiasi tipo. Offerta limitata!
+		</descrizione>
+	</notizia>
+
+	<notizia>
+		<data>2014-06-03</data>
+		<titolo>Expo Milano</titolo>
+		<categoria>Evento</categoria>
+		<descrizione>
+			Saremo presenti all'EXPO Milano 2015. Partecipate numerosi!
+		</descrizione>
+	</notizia>
+
+		<notizia>
+		<data>2014-06-20</data>
+		<titolo>Intel Pocket Avatar</titolo>
+		<categoria>Notizia</categoria>
+		<descrizione>
+			Intel lancia pocket avatar, app di messaggistica per parlare in 3D.
+		</descrizione>
+	</notizia>
+</notizie>

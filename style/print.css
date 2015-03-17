@@ -1,0 +1,273 @@
+*{ 
+    padding:0em;
+    margin:0em;
+}
+
+body {
+    font-family: Verdana, "Times New Roman", Arial, sans-serif;
+    font-size: 80%;
+    margin:auto;
+    border-style: solid;
+    border-width: thin;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+/*Sezione relativa all'header*/
+
+#header{
+    color: black;
+    background-color: transparent;
+}
+
+#header, #headImg, #headerText, #hederUtility  {  
+    height: 10em;
+}
+
+#headImg {
+    padding: 0.4em 1% 0 0;
+    margin-left: 1em;
+    float: left;
+    width: 20em;
+}
+
+#headerText {
+    margin-left: 22em;
+    text-align: left;
+}
+
+#headerText h1, #headerText h2{
+    padding-top: 0.5em;
+}
+/*Fine sezione relativa all'header*/
+
+/*Sezione relativa al breadcrumb*/
+#breadcrumb {
+    background-color: transparent;
+    clear: both;
+    border-style: solid;
+    border-width: thin;
+    border-left: none;
+    border-right: none;
+    padding: 1em;
+    color: black;
+}
+
+/*Fine sezione relativa allo stile del breadcrumb*/
+
+/*Sezione relativa al contenuto*/
+#content {
+    position: relative;
+    margin: 0 2% 0 0;
+    padding-top: 0.8em;
+    padding-right: 1%;
+    padding-left: 1%;
+    width: auto;
+    float: left;
+    background-color:transparent;
+
+    /*background: rgba(255,255,255,0.7); Tolta trasparenza per presunti problemi all'accessibilita' '*/
+    min-height: 100%;
+    font-size: medium;
+}
+
+#content p, form{
+    padding-bottom: 1.2em;
+    width: 100%;
+}
+
+#content form fieldset legend{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-left: 1em; 
+    background-color: white;
+}
+
+#content form label, #content form input, #content form textarea{
+    clear: both;
+    float: left;
+}
+
+#content form label{
+    margin-left: 1.2em;
+    margin-bottom: 0.5em;
+
+}
+
+#content form input, #content form textarea{
+    margin-left: 1.2em;
+    margin-bottom: 1em;
+}
+
+#submitReg, #resetReg {
+    margin-left: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#content form textarea{
+    resize: vertical;
+    width: 80%;
+}
+
+/*Parte propria privati*/
+
+.privateService, .businessService {
+    width: 100%;
+    height: 13em;
+    float: left;
+    margin: 2em 1em;
+    background-color: transparent;
+}
+
+.privateService a, .businessService a {
+    display: block;
+    line-height: 3em;
+    min-height: 3em;
+    padding-left: 1em;
+}
+
+.privateService dt, .businessService dt {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    color: white;
+    font-weight: bold;
+
+    /*CSS3*/
+    border-radius: 15px 15px 0px 0px;
+    /*CSS3*/
+}
+
+.privateService dd, .businessService dd {
+    height: 8em;
+    padding: 0.5em;
+    padding-left: 9em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888888;
+    
+    /*CSS3*/
+    border-radius: 0px 0px 20px 20px;
+    /*CSS3*/
+}
+
+#notizie dl{
+    margin: 2em auto;
+}
+
+#notizie dt {
+    font-weight: bold;
+}
+
+#notizie dd {
+    margin-top: 0.5em;
+}
+
+#computer dd {
+    background-image: url("../img/computer.png");
+    background-position: left;
+    background-size: 8em;
+    background-repeat: no-repeat;
+}
+
+#smartphone dd {
+    background-image: url("../img/tablet e smartphone.png");
+    background-position: left;
+    background-size: 8em;
+    background-repeat: no-repeat;
+}
+
+#mail dd {
+    background-image: url("../img/wifi e email.png");
+    background-position: left;
+    background-size: 8em;
+    background-repeat: no-repeat;
+}
+
+#software dd {
+    background-image: url("../img/software e periferiche1.png");
+    background-position: left;
+    background-size: 8em;
+    background-repeat: no-repeat;
+}
+
+#recovery dd {
+    background-image: url("../img/recuperodati.png");
+    background-position: left;
+    background-size: 8em;
+    background-repeat: no-repeat;
+}
+
+#corsi dd {
+    background-image: url("../img/corsi3.png");
+    background-position: left;
+    background-size: 8em;
+    background-repeat: no-repeat;
+}
+
+#networking dd {
+    background-image: url("../img/networking.png");
+    background-position: left;
+    background-size: 8em;
+    background-repeat: no-repeat;
+}
+
+#website dd {
+    background-image: url("../img/website2.png");
+    background-position: left;
+    background-size: 8em;
+    background-repeat: no-repeat;
+}
+
+/*Fine parte propria privati*/
+
+#content h2 {
+	margin-bottom: 0.5em;
+}
+
+#content ul {
+	margin: 0em 0em 1em 11em;
+	list-style-position: inside;
+	line-height: 1.5em;
+}
+
+#content img {
+	float: left;
+	width: 10em;
+	height: auto;
+        padding-bottom: 1em;
+}
+
+#content #alternativa {
+	clear: both;
+        float: left;
+}
+
+/*Fine sezione relativa al contenuto*/
+
+#news {
+    float: right;
+    width: 30%;
+    padding-top: 0.8em;
+    padding-left: 0.8em;
+    background-color:transparent;
+}
+
+.aural, .helper, #headerUtility, #nav{
+    display: none;
+}
+
+#footer{
+    visibility: hidden;
+    clear: both;
+    height: 0em;
+}
+
+@media print
+{
+    * {-webkit-print-color-adjust:exact;}
+}

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
+	
+<head>
+<title>Aggiungi News - Aynwed - Assistenza Tecnica Informatica</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="title" content="Aggiungi News - Aynwed - Assistenza Tecnica Informatica" />
+<meta name="description" content="Pagina dedicata all'aggiunta di una nuova news.'" />
+<meta name="keywords" content="" />
+<meta name="author" content="Alex Ruzzante,Federico Vegro, Giacomo Vanin" /> 
+<meta name="language" content="italian it" />
+
+<link rel="stylesheet" href="../style/stile.css" type="text/css" media="screen"/>
+<link type="text/css" rel="stylesheet" href="../style/base.css" media="handheld, screen" />
+<link type="text/css" rel="stylesheet" href="../style/small.css" media="handheld, screen and (max-width:680px), only screen and (max-device-width:680px)" />
+<link type="text/css" rel="stylesheet" href="../style/print.css" media="print" />
+<link type="text/css" rel="stylesheet" href="../style/aural.css" media="aural" />
+
+<script type="text/javascript" src="../js/script.js"></script>
+
+<link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+<link rel="alternate" type="application/rss+xml" title="" href="" />
+</head>
+
+<body>
+<div id="header">
+	<img src="../img/logo.png" id="headImg" alt="logo Azienda" />
+	
+	<div id="headerText">
+		<div id="headerUtility">
+	<a href="restricted.cgi">Area Riservata</a>
+			<a href="register.cgi" title="Registrazione nuovo utente">Registrazione</a>
+
+			<span class="aural">
+				<a href="#content">Vai ai contenuti</a>
+			</span>
+		</div>
+			
+	<h1 class="auralNotRead">All You Need WE Do</h1>
+	<h2>Servizi di riparazione ed assistenza tecnica informatica per privati ed aziende</h2>
+		
+	</div>
+</div>
+	<div id="breadcrumb">
+		Ti trovi in: <a href="../index.html"><span xml:lang="en">Home</span></a> >> <a href="restricted.cgi">Area Riservata</a> >> Aggiungi News
+	</div>
+	<div id="nav">
+		<ul>
+			<li><a tabindex="1" href="../index.html" class= "blocco"><span xml:lang="en">Home</span></a></li>
+			<li><a tabindex="2" href="../privati.html" class= "blocco">Privati</a></li>
+			<li><a tabindex="3" href="../business.html" class= "blocco"><span xml:lang="en">Business</span></a></li>
+			<li><a tabindex="4" href="../chisiamo.html" class= "blocco">Chi siamo</a></li>
+			<li><a tabindex="5" href="../contatti.html" class= "blocco">Contatti</a></li>
+<li><a href="chiedi.cgi" class= "blocco">Chiedi all'esperto</a></li>			
+		</ul>
+	</div>
+<div id="content">	
+	
+
+	<form action="add_news.cgi" method="post" id="add_news">
+	
+	<fieldset>
+	<legend>Dati news</legend>
+	
+	<label for="categoria">Categoria: </label>
+	  <select name="categoria" id="categoria">
+	      <option value="">--Seleziona Categoria--</option>
+	      <option value="Sconto">Sconto</option>
+	      <option value="Evento">Evento</option>
+	      <option value="Notizia">Notizia</option>
+	  </select>
+	  
+	<label for="data">Data (aaaa-mm-gg) :</label>
+	<input type="text" name="data" id="data" size="10" maxlength="10" value=""/>
+	
+	<label for="titolo">Titolo:</label>
+	<input type="text" name="titolo" id="titolo" value=""/>
+	
+	
+	<label for="descrizione">Descrizione:</label>
+	<textarea name="descrizione" id="descrizione" cols="4" rows="4"></textarea>
+	
+	</fieldset>
+	
+	<noscript>
+	  <fieldset class="script">
+	      <input type="hidden" id="javascript" name="javascript" value="false"/>
+	  </fieldset>
+	</noscript>
+
+	<div id="submitBtn">
+	<input type="submit" value="Aggiungi News" onclick="return checkAddNews()"/>
+	</div>
+	</form>
+</div>	<div id="footer">
+        <img src="../img/css.png" class="valid" alt="CSS Valid!"/>
+        <img src="../img/xhtml.png" class="valid" alt="XHTML 1.0 Valid!"/>
+        <strong>2014 Aynwed S.P.A.</strong> Via Trieste, 63, 35121 Padova, P.IVA 01234567899
+    </div>
+</body>
+</html>
+
+

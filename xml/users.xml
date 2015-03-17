@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utenti xmlns:a="http://www.aynwed.com" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="http://www.aynwed.com users.xsd">
+	<utente>
+		<nome>Amministratore</nome>
+		<cognome>Amministratore</cognome>
+		<email>info@aynwed.it</email>
+		<username>admin</username>
+		<password>bf3bd240e76d7fbaa5dae6d1b1572112</password>
+		<telefono>9999999999</telefono>
+		<tipo>amministratore</tipo>
+	</utente>
+
+	<utente>
+		<nome>Utente</nome>
+		<cognome>Base</cognome>
+		<email>utente@base.it</email>
+		<username>base</username>
+		<password>bf3bd240e76d7fbaa5dae6d1b1572112</password>
+		<telefono>3333333333</telefono>
+		<tipo>base</tipo>
+	</utente>
+</utenti>

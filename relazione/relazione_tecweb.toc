@@ -1,0 +1,15 @@
+\select@language {italian}
+\contentsline {section}{\numberline {1}Analisi dei requisiti}{3}
+\contentsline {subsection}{\numberline {1.1}Categorie di utenti}{3}
+\contentsline {section}{\numberline {2}Scelte progettuali}{3}
+\contentsline {subsection}{\numberline {2.1}Layout}{3}
+\contentsline {subsection}{\numberline {2.2}Parte statica}{3}
+\contentsline {subsection}{\numberline {2.3}Parte dinamica}{4}
+\contentsline {section}{\numberline {3}Realizzazione}{4}
+\contentsline {subsection}{\numberline {3.1}Ruoli degli sviluppatori}{5}
+\contentsline {section}{\numberline {4}Test}{5}
+\contentsline {subsection}{\numberline {4.1}Validazione con W3C Validator}{5}
+\contentsline {subsection}{\numberline {4.2}Test di contrasto dei colori}{7}
+\contentsline {subsection}{\numberline {4.3}Test resistenza strutturale}{9}
+\contentsline {subsection}{\numberline {4.4}Test browsers con Browserstack}{9}
+\contentsline {section}{\numberline {5}Conclusioni}{9}

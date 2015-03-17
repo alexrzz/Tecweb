@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.aynwed.com"
+	xmlns="http://www.aynwed.com"
+	elementFormDefault="qualified">
+
+    <xs:element name="utenti" type="Tutenti"/>
+	
+	<xs:complexType name="Tutenti">
+		<xs:element name="utente_admin" type ="Tutente_admin" minOccurs="1" maxOccurs="1"/>
+		<xs:sequence>
+			<xs:element name="utente" type ="Tutente" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>			
+	
+	<xs:simpleType name="Temail">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\S+@\S+\.[a-zA-Z0-9]+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Ttelefono">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(0039-)?0[0..9]{2,3}-[0..9]+" />
+		</xs:restriction>
+	</xs:simpleType>	                 
+	
+	<xs:complexType name ="Tutente">
+		<xs:sequence>
+			<xs:element name="nome" type="xs:string"/>
+				<xs:element name="cognome" type="xs:string"/>
+				<xs:element name="email" type="Temail"/>
+				<xs:element name="telefono" type="Ttelefono"/>
+				<xs:element name="username" type="xs:string"/>
+				<xs:element name="password" type="xs:string"/>					
+			</xs:element>				
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name ="Tutente_admin">
+		<xs:sequence>
+			<xs:element name="nome" type="xs:string"/>
+				<xs:element name="cognome" type="xs:string"/>
+				<xs:element name="email" type="Temail"/>
+				<xs:element name="telefono" type="Ttelefono"/>
+				<xs:element name="username" type="xs:string"/>
+				<xs:element name="password" type="xs:string"/>
+			</xs:element>				
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

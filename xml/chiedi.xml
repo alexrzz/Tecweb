@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domande xmlns:a="http://www.aynwed.com" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="http://www.aynwed.com chiedi.xsd">
+	<domanda>
+		<id>1</id>
+		<utente>vegruz</utente>
+		<testo>Salve, volevo sapere quanto tempo serve per la riparazione del vetro di un Apple iPhone.</testo>
+		<risposta>Salve vegruz, solitamente la riparazione viene effettuata in giornata. Saluti</risposta>
+	</domanda>
+</domande>

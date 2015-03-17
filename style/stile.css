@@ -1,0 +1,443 @@
+*{ 
+    padding:0em;
+    margin:0em;
+}
+
+body {
+    font-family: Verdana, "Times New Roman", Arial, sans-serif;
+    color: #333;
+    font-size: 80%;
+    margin:auto;
+    border-style: solid;
+    border-width: thin;
+    background: url(../img/back.png) 0 0 fixed;
+    background: radial-gradient(rgba(204,229,255,.15),rgba(0,0,0,.3)) fixed, #345 url(../img/back.png) 0 0 fixed;
+}
+
+/*Sezione relativa all'header*/
+
+#header{
+    color:black;
+    background-color: white;
+
+    /*CSS3*/
+    background: linear-gradient(rgba(255, 255, 255, .15),rgba(0, 0, 0, .1)),#FFFFFF;
+    /*CSS3*/
+}
+
+#header, #headImg, #headerText, #hederUtility  {  
+    height: 10em;
+}
+
+#headImg {
+    float: left;
+    width: 10em;
+    padding-left: 1em;
+}
+
+#headerText {
+    margin-left: 12em;
+    text-align: left;
+}
+
+#headerUtility{
+    text-align: right;
+    float: right;
+    width: auto;
+    padding-right: 0.8em;
+    height: 100%;
+}
+
+#headerUtility a{
+    clear: both;
+    float: right;
+    padding-right: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em; 
+}
+
+#headerText h1, #headerText h2{
+    padding-top: 0.5em;
+}
+/*Fine sezione relativa all'header*/
+
+/*Sezione relativa al breadcrumb*/
+#breadcrumb {
+    background-color: #EEEEEE;
+    clear: both;
+    border-style: solid;
+    border-width: thin;
+    padding: 1em;
+    color: #003366;
+    font-size: 1.2em;
+}
+
+/*Fine sezione relativa allo stile del breadcrumb*/
+
+/*Sezione relativa al contenuto*/
+#content {
+    position: relative;
+    padding-top: 0.8em;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 3em;
+    width: 76%;
+    /*    border-style: solid;
+        border-width: thin;
+        border-bottom: none;
+        border-top: none;*/
+    float: left;
+    background-color:white;
+
+    /*CSS3*/
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 25px #333333;
+    /*CSS3*/
+
+    /*background: rgba(255,255,255,0.7); Tolta trasparenza per presunti problemi all'accessibilità  */
+    min-height: 100%;
+    height: 100%;
+    font-size: medium;
+}
+
+#content p, form{
+    padding-bottom: 1.2em;
+}
+
+#content #p_base {
+    padding-bottom: 0em;
+    margin-top: 1em;
+}
+
+#content form fieldset legend{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-left: 1em;
+    background-color: white;
+}
+
+#content form label, #content form input, #content form textarea{
+    clear: both;
+    float: left;
+}
+
+#content form label{
+    margin-left: 1.2em;
+    margin-bottom: 0.5em;
+
+}
+
+#content form input, #content form textarea{
+    margin-left: 1.2em;
+    margin-bottom: 1em;
+}
+
+#content form.domande_admin p {
+    margin-top: 0.5em;
+}
+
+#content form.domande_admin input {
+    margin-left: 0em;
+}
+
+#submitReg, #resetReg {
+    margin-left: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#content form textarea{
+    resize: vertical;
+    width: 80%;
+}
+
+.script{
+    visibility: hidden;
+}
+
+#content #categoria {
+	margin-left: 0.5em;
+}
+
+/*Parte propria privati*/
+
+.privateService, .businessService {
+    width: 100%;
+    height: 13em;
+    float: left;
+    margin: 2em 1em;
+    background-color: #E8EAEA;
+
+    /*CSS3*/
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: -10px 10px 25px grey;
+    /*CSS3*/
+}
+
+.privateService a, .businessService a {
+    display: block;
+    line-height: 3em;
+    min-height: 3em;
+    padding-left: 1em;
+}
+
+.privateService dt, .businessService dt {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888888;
+    color: white;
+    font-weight: bold;
+
+    /*CSS3*/
+    border-radius: 15px 15px 0px 0px;
+    /*CSS3*/
+}
+
+.privateService dd, .businessService dd {
+    height: 8em;
+    padding: 0.5em;
+    padding-left: 9em;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: #888888;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#notizie dl{
+    margin: 2em auto;
+}
+
+#notizie dt {
+    font-weight: bold;
+}
+
+#notizie dd {
+    margin-top: 0.5em;
+}
+
+#computer dd {
+    background-image: url("../img/computer1.png");
+}
+
+#smartphone dd {
+    background-image: url("../img/tablet e smartphone1.png");
+}
+
+#mail dd {
+    background-image: url("../img/wifi e email1.png");
+}
+
+#software dd {
+    background-image: url("../img/software e periferiche1.png");
+}
+
+#recovery dd {
+    background-image: url("../img/recuperodati1.png");
+}
+
+#corsi dd {
+    background-image: url("../img/corsi1.png");
+}
+
+#networking dd {
+    background-image: url("../img/networking1.png");
+}
+
+#website dd {
+    background-image: url("../img/website1.png");
+}
+
+/*Fine parte propria privati*/
+
+/*Parte propria domande*/
+.domande {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+}
+
+.domande dl{
+    margin-bottom: 2em;
+}
+
+.domande dl dt{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888888;
+    background-color: #115F8C;
+    color: white; 
+    padding: 1em 0.5em;
+    font-weight: bold;
+
+    /*CSS3*/
+    border-radius: 15px 15px 0px 0px;
+    background: linear-gradient(rgba(255, 255, 255, .15),rgba(0, 0, 0, .1)),#115F8C;
+    /*CSS3*/
+}
+
+.domande dl dd{
+    padding: 1em;
+    
+    /*CSS3*/
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: -10px 10px 25px grey;
+    /*CSS3*/
+}
+
+/*Fine parte propria domande*/
+
+#content h2 {
+	margin-bottom: 0.5em;
+}
+
+#content ul {
+	margin: 0.5em auto 1em 11em;
+	list-style-position: inside;
+	line-height: 2em;
+}
+
+#content #ul_riserv {
+    margin-left: 0em;
+}
+
+#content img {
+	float: left;
+	width: 10em;
+	height: auto;
+}
+
+#content #alternativa {
+	clear: both;
+        float: left;
+        margin-top: 1em;
+}
+
+#content #submitBtn {
+    margin-top: 1em;
+}
+
+#content #submitBtn input {
+    margin-left: 0em;
+}
+
+#content #Map img {
+    width: 70%;
+    height: auto;
+}
+
+/*Fine sezione relativa al contenuto*/
+
+/*Inizio sezione relativa allo stile del menu di navigazione*/
+#nav {
+    padding-top: 0.5em;
+    float: left;
+    width: 20%;
+}
+
+#nav ul{
+    list-style: none;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: #888888;
+}
+
+#nav li {
+    clear: both;
+    float: right;
+    background-color: #EEEEEE;
+    /*margin-bottom: 0.3em;*/
+    width: 100%;
+    text-align: right;
+    line-height: 3em;
+    min-height: 3em;
+
+    /*Border Navigation menu*/
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #888888;
+
+}
+
+
+#nav #active{
+    font-size: medium;
+    font-weight: bold;
+    background-color: #115F8C;  /*#0082CC;->Azzurro piu chiaro   #042FBB->Azzurro piu scuro*/
+    background: linear-gradient(rgba(255, 255, 255, .15),rgba(0, 0, 0, .2)),#115F8C;
+    color: white;
+    padding-right: 1em;
+}
+
+#nav a.blocco{
+    display: block;
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    padding-right: 1em;
+}
+
+#nav li:hover{
+    background-color: #A9BBFF;
+}
+
+/*
+#nav a.blocco:hover, #nav a.blocco:focus, #nav a.blocco:active {
+    background-color: grey;
+    }*/
+
+/*Fine sezione relativa allo stile del menu di navigazione*/
+
+/*Parte relativa alle news*/
+
+#news {
+    float: right;
+    width: 30%;
+    padding-top: 0.8em;
+    padding-left: 0.8em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    background-color:white;
+    background: linear-gradient(rgba(255, 255, 255, .15),rgba(0, 0, 0, .1)),#FFFFFF;
+    border-style:double;
+    border-color: #0082CC;
+    margin-left: 2em;
+}
+
+#news dt {
+    font-weight: bold;
+}
+
+#news dd {
+    margin-bottom: 1em;
+}
+
+/*Fine parte relativa alle news*/
+
+#footer {
+    clear: both;
+    text-align:center;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: thin;
+    border-bottom: none;
+    padding: 0.8em;
+    background-color: white;
+
+    /*CSS3*/
+    background: linear-gradient(rgba(255, 255, 255, .15),rgba(0, 0, 0, .1)),#FFFFFF;
+    /*CSS3*/
+}
+
+#footer img{
+    vertical-align: middle;
+}
+
+.aural{
+    visibility: hidden;
+}
+
+.helper{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

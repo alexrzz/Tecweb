@@ -1,0 +1,148 @@
+
+*{ 
+    padding:0em;
+    margin:0em;
+}
+body {
+    font-family: Verdana, "Times New Roman", Arial, sans-serif;
+    color: #333;
+    font-size: 80%;
+    margin:auto;
+}
+img {
+    border: 0;
+}
+ul{
+    margin: 0;
+    padding: 0.2em;
+    list-style-type: none;
+}
+li {
+    padding-top: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+abbr{
+    border: 0;
+    font-variant: normal;
+}
+#header {
+    margin:0 2% 0 2%;
+}
+
+/*Inizio sezione relativa allo stile dell'header*/
+#headImg {
+    width: 19%;
+    padding: 0.4em 1% 0.4em 0;
+    float: left;
+}
+#headerUtility {
+    text-align: right;
+    float: right;
+    width: 40%;
+    padding-right: 0.8em;
+    line-height: 1.8em;
+}
+#headerUtility form {
+    padding-top: 0.8em;
+}
+/* nascondere ricerca e cerca nel sito 
+#headerUtility form label , #headerUtility form legend {
+    display:none;
+}
+*/
+#textInput {
+    width: 40%;
+}
+#headerText {
+    margin-top:0.8em;
+    padding-left: 1.5em;
+    z-index: 1;
+    margin-left: 20%;
+    background-color: #EEEEEE;
+    color: #30343b;
+    padding-bottom: 3.4em;
+}
+#header h1 {
+    font-size: 2.5em;
+    font-variant:small-caps;
+    padding:0.3em 0 0.3em 0;
+}
+#header h2 {
+    font-size: 1.2em;
+    font-style:oblique;
+    padding:0.3em 0 0.3em 0;
+}
+/*Fine sezione relativa allo stile dell'header*/
+
+/*Inizio sezione relativa allo stile del breadcrumb*/
+
+#breadcrumb {
+
+}
+
+/*Fine sezione relativa allo stile del breadcrumb*/
+
+/*Inizio sezione relativa allo stile del menu di navigazione*/
+#content {
+    clear: both;
+    margin: 0 2% 0 2%;
+}
+#nav {
+    background-color: #EEEEEE;
+    padding-top: 0.8em;
+    float: left;
+    width: 20%;
+    color: #003366;
+}
+/* voce del menu di navigazione attiva
+#navigation-current {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-weight: bolder;
+    background-color: white;
+}
+*/
+
+/*Fine sezione relativa allo stile del menu di navigazione*/
+
+/*Inizio sezione relativa allo stile del corpo e di ogni elemento in esso contenuto*/
+
+#content{
+    margin:0px;
+    margin-left:20%;   
+}
+/*Fine sezione relativa allo stile del corpo e di ogni elemento in esso contenuto */
+
+/*Inizio sezione relativa alle news*/
+
+#news {
+    float: right;
+    width: 25%;
+    padding: 1.5em 0 1.2em 0;
+    background-color: white;
+
+    /*Fine sezione relativa alle news*/
+
+    /*Inizio sezione relativa allo stile del footer*/
+
+    #footer {
+        clear: both;
+        text-align: center;
+        margin:0 2% 0 2%;
+    }
+
+    /*Fine sezione relativa allo stile del footer*/
+
+
+    /*Inizio sezione relativa agli stili di tutti gli elementi legati all'accessibilitÃ */
+    #skipUtilities {
+        display:none;
+    }
+    .aural {
+        visibility: hidden;
+    }
+    /*Fine sezione relativa agli stili di tutti gli elementi legati all'accessibilitÃ */

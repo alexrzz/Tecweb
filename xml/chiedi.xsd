@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.aynwed.com"
+	xmlns="http://www.aynwed.com"
+	elementFormDefault="qualified">
+
+<xs:element name="domande">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="domanda" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="id" type="xs:date" />
+                        <xs:element name="utente" type="xs:string" />
+                        <xs:element name="testo" type="xs:string" />
+			<xs:element name="risposta" minOccurs="0" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

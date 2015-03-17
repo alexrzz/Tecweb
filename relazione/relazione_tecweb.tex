@@ -1,0 +1,189 @@
+\documentclass[a4paper]{article}
+
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{graphicx}
+
+\begin{document}
+\title{Relazione Progetto Tecweb \\a.a 2013-2014}
+\author{Alex Ruzzante, Federico Vegro, Giacomo Vanin}
+\date{\today}
+
+\maketitle
+\textbf{Referente}: Federico Vegro \\
+\textbf{Mail}: \verb=federico.vegro@studenti.unipd.it= \\
+\begin{center}
+\textbf{DATI DI ACCESSO AL SITO}
+\end{center}
+\textbf{URL: } \url{http://tecnologie-web.studenti.math.unipd.it/tecweb/~fvegro/}\\\\
+\textbf{Utente amministratore}
+\begin{quote}
+	\textbf{Username: } \verb=admin= \\
+	\textbf{Password: } \verb=tecweb= \\
+\end{quote}
+\textbf{Utente base}
+\begin{quote}
+	\textbf{Username: } \verb=base= \\
+	\textbf{Password: } \verb=tecweb= \\
+\end{quote}
+
+\newpage
+
+\begin{abstract}
+	Aynwed (All You Need WE Do) è un'azienda inventata che si occupa di fornire servizi informatici a privati ed aziende.
+\end{abstract}
+\tableofcontents
+\newpage
+%
+%                 NOTE TECNICHE
+% Un capitolo si inizia con \section{Titolo capitolo}
+% Un sottocapitolo si crea con \subsection{Titolo}
+%
+% Sia capitoli che sottocapitoli vengono aggiunti automaticamente 
+% all'indice non appena verranno popolati
+%
+%
+\section{Analisi dei requisiti}
+Nell'ideazione del progetto in questione ci siamo ispirati ad una possibile realtà lavorativa riguardante un'azienda nel settore informatico, la quale si occupa di offrire servizi di assistenza tecnica, di riparazione e di formazione per privati ed aziende.
+\subsection{Categorie di utenti}
+Nella progettazione del sito sono state considerate tre grandi categorie di utenti finali:
+\begin{itemize}
+	\item Amministratore (Utente interno): si occupa della gestione delle news e di rispondere alle domande poste da utenti esterni;
+	\item Utenti generici (Utenti esterni): quella categoria di utenti con basse competenze informatiche e limitata disponibilità economica;
+	\item Utenti business (Utenti esterni): operano per conto di aziende, dispongono di elevate risorse economiche. 
+\end{itemize}
+
+\section{Scelte progettuali}%cosa è stato pensato inizialmente e cosa realmente è stato realizzato e perchè, analisi dei competitor dai quali prendere spunto...insomma una storia della realizzazione del progetto
+\subsection{Layout}
+Il layout utilizzato è un'estensione del classico layout a tre pannelli; si è scelto di estendere la struttura per tutta la larghezza dello schermo anzichè occupare la parte centrale per avere una superficie più ampia e quindi contenere più informazioni.\\
+Il layout è composto da: 
+\begin{itemize}
+ \item \textbf{Header}, che contiene una descrizione generica dell'azienda, il logo e due link che permettono di raggiungere rispettivamente l'area riservata e la pagina di registrazione da qualsiasi pagina del sito;
+ \item \textbf{Breadcrumb}, assiste la navigazione nel sito indicando sempre la posizione corrente;
+ \item \textbf{Content}, per illustrare il contenuto del sito;
+ \item \textbf{Menu} di navigazione laterale,
+\end{itemize}
+
+\subsection{Parte statica}
+Il sito è stato strutturato in modo da dividere in due sezioni i servizi offerti: privati e business. In questo modo ogni utente identifica rapidamente l'area di suo interesse.
+Entrambe le sezioni presentano i servizi offerti in modo generico tramite titolo e breve sommario (blurb). Ognuno di questi titoli è cliccabile e porta ad una pagina contentente la descrizione completa e dettagliata del servizio.
+Oltre alle pagine dedicate ai servizi sono presenti ulteriori pagine statiche: Homepage, Chi Siamo e Contatti. 
+\subsection{Parte dinamica}
+La prima sezione dinamica visibile è il riquadro delle notizie in homepage, riportante le ultime quattro notizie inserite dall'amministratore. Il meccanismo di recupero delle news sulla homepage è stato implementato tramite javascript; nel caso in cui quest'ultimo fosse disabilitato, viene visualizzato un messaggio opportuno.
+L'archivio completo di tutte le news è consultabile tramite un link che punta al file xml, la sua visualizzazione è affidata ad un foglio di stile xsl.\\\\
+Un'area molto importante del sito è la cosiddetta \textit{``Chiedi all'esperto''}, all'interno della quale qualsiasi utente (registrato o meno) può liberamente inserire una domanda, che verrà valutata dall'amministratore e, se ritenuta pertinente, pubblicata in questa sezione con la relativa risposta.\\\\
+Il form di registrazione al sito è raggiungibile da qualsiasi pagina attraverso l'apposito link \textit{``Registrazione''} presente nell'Header. Una volta inseriti i dati necessari, l'utente viene inserito all'interno di un file xml.\\
+Una volta registrato, l'utente potrà accedere all'\textit{``Area Riservata''} dove avrà la possibilità di modificare i propri dati e di visualizzare le proprie domande precedentemente inserite nella sezione \textit{``Chiedi all'esperto''}, siano esse già state approvate o ancora in fase di approvazione da parte dell'amministratore.\\
+Come già accennato in precedenza, l'\textit{``Area Riservata''} dell'utente amministratore ha funzionalità diverse, in quanto si occupa di valutare e rispondere alle domande poste dagli utenti generici e di aggiungere nuove notizie all'archivio news. 
+
+\section{Realizzazione}
+Inizialmente, il gruppo era composto da quattro persone ed il sito era stato concepito in maniera leggermente diversa da quanto è stato possibile realizzare in seguito alla dipartita di Alessandro Benetti. \\
+Precedentemente, tra le varie ipotesi di progetto che sono state prese in considerazione, la più importante era la realizzazione di un sito di una galleria d'arte in cui venisse data la possibilità agli utenti di lasciare commenti alle opere. \\
+Tornando a ciò che si è scelto di realizzare, il brainstorming iniziale prevedeva la presenza di recensioni e valutazioni da parte degli utenti, una sorta di feedback, per ogni servizio offerto dalla pseudo-azienda. Inoltre, era stato pensato di implementare una funzione di creazione preventivi su misura ed una quantità di servizi più elevata.\\
+Il layout scelto è rimasto pressoché invariato nel corso del tempo, salvo piccole modifiche per migliorare la struttura e l'accessibilità. La categorizzazione dei servizi è stata modificata rispetto al progetto iniziale e si è passati da un layout a griglia verso un più funzionale layout a lista.\\
+La scelta dei colori da utilizzare è stata lasciata tra le ultime cose da fare ed è stata il frutto di numerosi test di contrasto. \\
+Varie altre piccole modifiche ed adattamenti non previsti sono stati effettuati in corso d'opera.
+
+\subsection{Ruoli degli sviluppatori}
+Si è cercato di suddividere il lavoro in modo equo tra i vari componenti del gruppo, dopo una prima fase di discussione collettiva su ciò che si aveva intenzione di realizzare in cui è stato lasciato spazio alle idee di ognuno e da cui sono state tracciate le linee guida per il proseguo.
+Uno dei primi compiti assegnato a tutti i componenti è stata l'individuazione e l'analisi dei competitor e l'individuazione di tutti i possibili strumenti e risorse di lavoro, intesi come siti dai quali attingere informazioni, programmi per la validazione ecc.
+Una prima bozza di layout è stata realizzata da Federico mentre Alex e Giacomo si occupavano della stesura dei contenuti statici ed il quarto componente del gruppo apportava un contributo poco significativo, che avrebbe comportato, diversi mesi dopo, la sua esclusione dal gruppo. Terminata la fase di progettazione, i compiti sono stati suddivisi nel seguente modo: Federico ha iniziato la realizzazione dei template delle pagine statiche, Alex e Giacomo la creazione dei fogli di stile CSS.
+In seguito al completamento di una prima parte del lavoro, i ruoli sono stati modificati. Giacomo, con un iniziale contributo di Federico, ha proseguito e la parte riguardante la presentazione, Federico si è dedicato alla parte dinamica in Perl ed Alex, completata la realizzazione delle pagine statiche, si è concentrato su Xml Schema, Xslt e parte di Javascript.
+Durante questa fase comunque, all'occorrenza, ogni componente del gruppo si è prestato a svolgere anche compiti diversi da quelli assegnatigli, fornendo il proprio contributo anche in aree diverse dalle proprie, aiutando i compagni. Ad esempio, alcune difficoltà riscontrate con il linguaggio Perl sono state affrontate e risolte dall'intero gruppo così come altri piccoli problemi riguardanti l'interazione tra Perl e Xml.
+In seguito è stato completato il codice Javascript da parte di Federico, mentre Alex è passato alla parte di accessibilità del sito e Giacomo ha terminato i fogli di stile anche per i dispositivi mobili.
+
+\section{Test}
+Al termine della realizzazione del sito, dopo la ricerca e correzione di bug ed in seguito ad altri piccoli raffinamenti , si è passati alla fase di test. Questa fase comprende la validazione di ogni singola pagina, la verifica del contrasto dei colori, prove di accesso al sito da browser, dispositivi e sistemi operativi diversi e prove di resistenza strutturale con diverse risoluzioni dello schermo.
+
+\subsection{Validazione con W3C Validator}
+Per controllare la validità del codice XHTML 1.0 Strict, ci siamo serviti del validatore online offerto da W3C raggiungibile all'indirizzo \url{http://validator.w3.org/}.\\
+Analogamente per i fogli di stile CSS versione 3 è stato usato il validatore di W3C all'indirizzo \url{http://jigsaw.w3.org/css-validator/}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1.1\textwidth]{test/validazione/indexValidator.png}
+\caption{\label{f_etichetta}Validazione di index.html.}
+\includegraphics[width=1.1\textwidth]{test/validazione/stileValidator.png}
+\caption{\label{f_etichetta}Validazione di stile.css.}
+\end{figure}
+
+\newpage 
+\clearpage
+\subsection{Test di contrasto dei colori}
+Abbiamo controllato tutti i rapporti di contrasto tra testo e sfondo utilizzando Color Contrast Analyzer. I risultati dei test sono riportati di seguito:
+
+
+\begin{figure}[htbp]
+\begin{minipage}[b]{0.47\textwidth}
+\centering
+\includegraphics[width=\textwidth]{test/contrasto/Test_Body.png}
+\caption{\label{f_etichetta}Contrasto corpo principale.}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.47\textwidth}
+\includegraphics[width=\textwidth]{test/contrasto/Test_Header_Banner.png}
+\caption{\label{f_etichetta}Contrasto testo su header.}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{minipage}[b]{0.47\textwidth}
+\centering
+\includegraphics[width=\textwidth]{test/contrasto/Test_Header_Link.png}
+\caption{\label{f_etichetta}Contrasto link header non visitati.}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.47\textwidth}
+\includegraphics[width=\textwidth]{test/contrasto/Test_Header_Link_Visited.png}
+\caption{\label{f_etichetta}Contrasto link visitati header.}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{minipage}[b]{0.47\textwidth}
+\vfill
+\includegraphics[width=\textwidth]{test/contrasto/Test_Menu_Active.png}
+\caption{\label{f_etichetta}Contrasto voce menu attiva.}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.47\textwidth}
+\includegraphics[width=\textwidth]{test/contrasto/Test_Menu_Hover.png}
+\caption{\label{f_etichetta}Contrasto voce menu al passaggio del mouse.}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{minipage}[b]{0.47\textwidth}
+\vfill
+\includegraphics[width=\textwidth]{test/contrasto/Test_Menu_Inactive.png}
+\caption{\label{f_etichetta}Contrasto voce inattiva menu.}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.47\textwidth}
+\includegraphics[width=\textwidth]{test/contrasto/Test_Title_Chiedi.png}
+\caption{\label{f_etichetta}Contrasto titolo pagina chiedi all'esperto.}
+\end{minipage}
+\end{figure}
+
+\newpage
+\clearpage
+\subsection{Test resistenza strutturale}
+Sono stati inoltre effettuati svariati test per la resistenza strutturale del layout, visualizzando il sito a diverse risoluzioni tramite dispositivi mobili, come smartphone e tablet, e dispositivi desktop.
+Il layout si adatta alle basse risoluzioni modificando opportunamente l'interfaccia e mantenendo inalterati i contenuti e le funzionalità.
+
+\subsection{Test browsers con Browserstack}
+Per testare il sito con vari browsers e sistemi operativi è stato utilizzato Browserstack, che permette l'avvio online di macchine virtuali.
+Sono stati eseguiti test con i seguenti browsers:
+\begin{itemize}
+	\item Internet Explorer dalla versione 6.0 alla versione 11.0
+	\item Mozilla Firefox dalla versione 3.0 alla versione 30.0
+	\item Google Chrome dalla versione 14.0 alla versione 35.0.1916.153
+	\item Opera dalla versione 10.6 alla versione 22.0.1471.70
+	\item Safari dalla versione 4.0 alla versione 7.0.4
+\end{itemize}
+Inoltre il sito è stato testato mediante il browser testuale Lynx e su alcuni smartphone tra cui Samsung Galaxy con Android e Iphone con sistema operativo iOS. Sono stati riscontrati dei problemi di visualizzazione solo con Internet Explorer 6.0, che tuttavia non impediscono la normale navigazione all'interno del sito.
+
+\section{Conclusioni}
+Il sito realizzato è accessibile indipendentemente dal browser e dalla dimensione dello schermo degli utenti, ed è utilizzabile anche da categorie di utenti con disabilità. Siamo soddisfatti di ciò che abbiamo realizzato e non escludiamo di poter ampliare il nostro lavoro in futuro, o comunque di utilizzarlo come base per progetti futuri. 
+\end{document}
